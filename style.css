@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+#difficulty {
+    margin-bottom: 10px;
+}
+
+#timer {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#wordSearchGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-gap: 5px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cell.selected {
+    background-color: #add8e6;
+}
+
+.cell.found {
+    background-color: #90ee90; /* Light green for found words */
+}
+
+#wordList, #remainingWords {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#score {
+    font-size: 18px;
+    margin-top: 10px;
+}
